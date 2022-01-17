@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <title>University Website Design</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html"><img src="imgs/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa sunt sit assumenda repellat dicta est
+                fugit nam ex consequatur, <br> optio eum quis similique minus architecto deserunt consequuntur. Dolore, non
+                quam.
+            </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </header>
+
+    <section class="course">
+        <h2>Course We Offer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laudantium fugit quod ratione beatae optio tempora. Veritatis, inventore consequatur quam suscipit quis fugiat! Ducimus, excepturi ea!</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laudantium fugit quod ratione beatae optio tempora. Veritatis, inventore consequatur quam suscipit quis fugiat! Ducimus, excepturi ea!</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laudantium fugit quod ratione beatae optio tempora. Veritatis, inventore consequatur quam suscipit quis fugiat! Ducimus, excepturi ea!</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="campus">
+        <h2>Our Global Campus</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="imgs/london.png" alt="London campus">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let navLinks = document.querySelector("#navLinks");
+
+        function showMenu() 
+        {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() 
+        {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
